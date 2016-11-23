@@ -1,3 +1,4 @@
+//This is Pure Javascript
 var student = {
   name: "",
   type: "student"
