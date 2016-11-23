@@ -1,3 +1,5 @@
+//This has to be converted to Angular JS
+
 var student = {
   name: "",
   type: "student"
