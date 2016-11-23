@@ -2,101 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Angular JS</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <title>First Angular Lesson</title>
   </head>
-  <body ng-app="mainApp" ng-controller="nameController">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="text-center">Know your Student</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-6">
-
-          <form class="" action="index.html" method="post">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" ng-model="firstName">
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" ng-model="lastName">
-            </div>
-            <div class="form-group">
-              <label for="fees">Student Fees</label>
-              <input type="text" id="fees" class="form-control" ng-model="fees">
-            </div>
-            <div class="form-group">
-                <label for="continent">Continent</label>
-                <select id="continent" ng-model="continent" class="form-control">/
-                    <option ng-repeat=" continent in continents  | orderBy: continent " value="{{ continent }}">{{ continent }}</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="country">Country</label>
-                <select name="country" id="country" ng-model="country" class="form-control">
-                    <option ng-repeat="country_s in countries | filter: continent" value="{{ country_s.name }}">{{country_s.code }}</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label for="afees">
-                      <input type="checkbox" id="afees" class="" ng-model="enableButton"> Disable Button
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-              <input type="button" id="fees" class="btn btn-info" ng-disabled="enableButton" value="Submit">
-            </div>
-            
-            <div class="form-group">
-                <div class="checkbox">
-                    <label for="showButton">
-                      <input type="checkbox" id="showButton" class="" ng-model="showButton">  Show Button
-                      <br>
-                      <input type="checkbox" id="hideButton" class="" ng-model="hideButton">  Hide Button
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-              <input type="button" id="" class="btn btn-success" ng-show="showButton" value="Submit">
-              <input type="button" id="" class="btn btn-warning" ng-hide="hideButton" value="Submit">
-            </div>
-            <div class="form-group">
-                <input type="button" ng-click="counter = counter+1" value="Increment" class="btn btn-default">
-                <br>
-                <h4>{{ counter }}</h4>
-            </div>
-          </form>
-        </div>
-        <div class="col-xs-6">
-          <h3 class="text-center">{{ (firstName | uppercase) + ' ' +  (lastName | uppercase) }}</h3>
-          <h5 class="text-center"> Fee Due: {{ fees | currency }}</h5>
-          <h4 class="text-center">{{ country }}</h4>
-        </div>
-      </div>
-    </div>
+  <body>
+      <h1>First Angular Lesson 101</h1>
+      <h2>From Coursera</h2>
   </body>
-  <script type="text/javascript">
-    var app = angular.module('mainApp',[]);
-    app.controller('nameController',function($scope) {
-      $scope.firstName = 'John';
-      $scope.lastName = 'Doe';
-      $scope.fees = '0';
-        $scope.counter = 0;
-        $scope.country = 'India';
-        $scope.continent='Asia';
-        $scope.continents=['Asia','Australia','Europe','America','Africa'];
-        $scope.countries = [{name:'India', code: 'IN',continent:'Asia'},
-                            {name:'United States',code:'US',continent:'America'},
-                            {name:'United Kingdom',code:'UK',continent:'Europe'},
-                            {name:'Belgium',code:'BG',continent:'Europe'}];
-        $scope.showButton = true;
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" charset="utf-8"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
 </html>
