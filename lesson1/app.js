@@ -1,3 +1,5 @@
+// This is Pure Javascript
+
 var student = {
   name: "",
   type: "student"
@@ -23,6 +25,6 @@ function calculateNumericOutput() {
   }
 
   // Insert result into page
-  var output = "Total Numeric value of person's name is " + totalNameValue;
+  var output = "Total Numeric value of input value is " + totalNameValue;
   document.getElementById('output').innerText = output;
 }
