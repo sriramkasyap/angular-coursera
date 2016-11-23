@@ -1,4 +1,4 @@
-// This is Pure Javascript
+// This is AngularJS
 
 var student = {
   name: "",
