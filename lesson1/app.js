@@ -1,5 +1,3 @@
-// This is AngularJS
-
 var student = {
   name: "",
   type: "student"
