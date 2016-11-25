@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 var student = {
   name: "",
   type: "student"
@@ -20,6 +21,27 @@ function calculateNumericOutput() {
   var output = "Total Numeric value of input value is " + totalNameValue;
   document.getElementById('output').innerText = output;
 }
+=======
+(function () {
+'use strict';
+
+angular.module('MsgApp', [])
+.controller('MsgController', MsgController);
+
+MsgController.$inject = ['$scope'];
+function MsgController($scope) {
+  $scope.name = "Sriram Kasyap";
+  $scope.sayMessage = function () {
+    return "Sriram Kasyap likes to eat, sleep and code!!";
+  };
+  $scope.currentState = 'hungry';
+  $scope.feedMe = function () {
+    $scope.currentState = 'fed';
+  };
+}
+
+})();
+>>>>>>> expressions
 =======
 !function(){"use strict";function e(e,n){e.name="Yaakov",e.upper=function(){var o=n("uppercase");e.name=o(e.name)}}angular.module("DIApp",[]).controller("DIController",["$scope","$filter",e])}();
 >>>>>>> angularjs
