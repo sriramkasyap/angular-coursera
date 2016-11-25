@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var student = {
   name: "",
   type: "student"
@@ -19,3 +20,6 @@ function calculateNumericOutput() {
   var output = "Total Numeric value of input value is " + totalNameValue;
   document.getElementById('output').innerText = output;
 }
+=======
+!function(){"use strict";function e(e,n){e.name="Yaakov",e.upper=function(){var o=n("uppercase");e.name=o(e.name)}}angular.module("DIApp",[]).controller("DIController",["$scope","$filter",e])}();
+>>>>>>> angularjs
