@@ -1,27 +1,17 @@
-(function () {
-'use strict';
+// (function () {
+// 'use strict';
+//
+//   angular.module('DIApp', [])
+//   .controller('DIController', ['$scope','$filter',DIController]);
+//
+//   function DIController ($scope, $filter) {
+//     $scope.name = "Yaakov";
+//     $scope.upper = function () {
+//       var upCase = $filter('uppercase');
+//       $scope.name = upCase($scope.name);
+//     };
+//   }
+//
+// })();
 
-angular.module('NameCalculator', [])
-
-  .controller('NameController', function ($scope) {
-    $scope.name='';
-    $scope.value = 0;
-    $scope.sayHello=function(textInput) {
-      return "Hello " + textInput + "!!";
-    };
-    $scope.displayNumeric = function() {
-      var totalNameValue = calculateNumericOutput($scope.name);
-      $scope.value=totalNameValue;
-    };
-
-    function calculateNumericOutput(stringInput) {
-      var totalStringValue = 0;
-      for (var i = 0; i < stringInput.length; i++) {
-        totalStringValue +=  stringInput.charCodeAt(i);
-      }
-
-      return totalStringValue;
-    }
-  });
-
-})();
+!function(){"use strict";function e(e,n){e.name="Yaakov",e.upper=function(){var o=n("uppercase");e.name=o(e.name)}}angular.module("DIApp",[]).controller("DIController",["$scope","$filter",e])}();
