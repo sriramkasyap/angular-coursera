@@ -9,7 +9,11 @@ function MsgController($scope) {
   $scope.name = "Sriram Kasyap";
   $scope.sayMessage = function () {
     return "Sriram Kasyap likes to eat, sleep and code!!";
-  }
+  };
+  $scope.currentState = 'hungry';
+  $scope.feedMe = function () {
+    $scope.currentState = 'fed';
+  };
 }
 
 })();
