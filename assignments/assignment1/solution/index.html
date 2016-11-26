@@ -8,7 +8,10 @@
     <script src="js/angular.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
     <style>
-      .message { font-size: 1.3em; font-weight: bold; }
+      .message { font-size: 1.3em; font-weight: bold;  border-radius: 5px; padding: 10px; text-align: center; max-width:300px;margin: auto;}
+      .red { color: red; border: 1px solid red;}
+      .green {color: green; border: 1px solid green;}
+      .black { color: black; }
     </style>
   </head>
 <body ng-app="LunchCheck">
@@ -23,9 +26,7 @@
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkIfTooMuch()">Check If Too Much</button>
          </div>
-         <div class="form-group message" >
-              {{message}}
-         </div>
+         <div class="form-group message {{ messageColor }}" ng-bind="message"></div>
    </div>
 
 </body>
