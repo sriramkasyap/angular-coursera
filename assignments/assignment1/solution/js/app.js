@@ -1,12 +1,12 @@
 (function () {
   'use strict';
 
-  angular.module('lunchAnalyst',[])
-  .controller('itemCalculator', itemCalculator);
+  angular.module('LunchCheck',[])
+  .controller('LunchCheckController', LunchCheckController);
 
-  itemCalculator.$inject = ['$scope'];
+  LunchCheckController.$inject = ['$scope'];
 
-  function itemCalculator($scope) {
+  function LunchCheckController($scope) {
     $scope.items='';
     $scope.message='';
     $scope.checkIfTooMuch = function() {
